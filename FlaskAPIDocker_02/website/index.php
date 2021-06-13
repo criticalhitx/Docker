@@ -6,7 +6,7 @@
 <h1>Welcome to MyShop </h1>
 <ul>
 	<?php
-		$json = file_get_contents('http://product-service/test');
+		$json = file_get_contents('http://product/test');
 		$obj = json_decode($json);
 		$products = $obj->products;
 		foreach ($products as $product){
@@ -16,7 +16,7 @@
 <br>
 <h2>This is Under Development </h2>
 	<?php
-                $json = file_get_contents('http://product-service/product');
+                $json = file_get_contents('http://product/product');
                 $obj = json_decode($json);
                 $products = $obj->products;
                 foreach ($products as $product){
